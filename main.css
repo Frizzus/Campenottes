@@ -1,0 +1,80 @@
+@charset "UTF-8";
+/* 'Font Awesome 5 Brands' ; 'Font Awesome 5 Free' */
+@import url(ressources/fontawesomeCss/v5-font-face.css);
+/* color été */
+/* color hiver */
+body {
+  margin: 0px;
+  font-family: "Font Awesome 5 Free";
+  font-size: 1.4rem;
+}
+
+/*=============================================
+=            HEADER            =
+=============================================*/
+header {
+  height: 30vh;
+  /* Background */
+  background-image: url(img/imageNavbargimp.JPG);
+  background-position: center;
+  background-size: cover;
+  /* Typo */
+  color: #F2F2F2;
+  /* Flex */
+  /* valeur par défault: flexWrap = wrap */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+header h1 {
+  width: 7em;
+  margin: 0px;
+}
+header figure > img {
+  height: 1.5em;
+  margin: 0px;
+  margin-right: 5px;
+}
+header figure ~ img {
+  box-sizing: content-box;
+  height: 2em;
+  /* background */
+  background-color: #F2F2F2;
+  border-radius: 10px;
+  /* box model */
+  padding: 5px;
+}
+
+#title {
+  margin-bottom: 10px;
+  /* valeur par défault: flexWrap = wrap */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: nowrap;
+}
+#title img {
+  width: calc(4em + 2.5vw);
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 400px) {
+  header {
+    /* valeur par défault: flexWrap = wrap */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: end;
+    flex-wrap: nowrap;
+  }
+  header figure, header > img {
+    margin-right: 1em;
+  }
+  #title {
+    align-self: center;
+  }
+}
+/*=====  End of HEADER  ======*//*# sourceMappingURL=main.css.map */
