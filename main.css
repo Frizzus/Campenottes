@@ -77,69 +77,87 @@ header figure ~ img {
     align-self: center;
   }
 }
-/*=====  End of HEADER  ======*//*# sourceMappingURL=main.css.map */
+/*=============================================
+=            MAIN            =
+=============================================*/
+main {
+  position: relative;
+}
+main #background {
+  width: 100%;
+  height: 100%;
+  /* background */
+  background-image: url(img/background.jpg);
+  background-repeat: repeat-y;
+  background-size: cover;
+  /* position */
+  position: absolute;
+  z-index: -3;
+}
+main #background div {
+  /* box model */
+  height: 100%;
+  width: 100%;
+  /* position */
+  position: relative;
+  z-index: -2;
+  /* background */
+  background-color: hsla(28.8deg, 100%, 95.1%, 0.9);
+}
+
+/*=============================================
+=            FOOTER            =
+=============================================*/
 footer {
-    background-color: #494D2C;
-    color: #F2F2F2;
-
+  background-color: #494D2C;
+  color: #F2F2F2;
 }
-
-img {
-    max-width: 100%;
-    height: auto;
+footer img {
+  max-width: 100%;
+  height: auto;
 }
-
-.bordure {
-    border: box;
-    border-top: 1px solid;
-    margin-right: 1035px;
-    margin-left: 10px;
-    color: #A2D4F2;
-    margin-top: 10px;
+footer .bordure {
+  width: calc(15em + 2.5vw);
+  border-top: 1px solid;
+  margin-left: 10px;
+  color: #A2D4F2;
+  margin-top: 10px;
 }
-
-.footp {
-    margin-left: 20px;
-    margin-top: 6px;
-    font-family: 'Josefin Sans', sans-serif;
+footer .footp {
+  margin-left: 20px;
+  margin-top: 6px;
+  font-family: "Josefin Sans", sans-serif;
 }
-
-.logolol img {
-    max-width: 65px;
-    width: 90%;
-    margin-left: 1%;
-    margin-top: 2%;
+footer .logolol img {
+  max-width: 65px;
+  width: 90%;
+  margin-left: 1%;
+  margin-top: 2%;
 }
-
-.mention {
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 3%;
-    margin-right: 1%;
-    color: #A2D4F2;
+footer .mention {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 1em;
+  margin-right: 1%;
+  color: #A2D4F2;
 }
-
-.logolol {
-    display: flex;
-    
+footer .logolol {
+  display: flex;
 }
-
-.titre {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;      
+footer .titre {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
-
-.les {
-    position: relative;
-    margin-left: 3%;
-    font-family: 'Josefin Sans', sans-serif;
+footer .les {
+  position: relative;
+  margin-left: 3%;
+  font-family: "Josefin Sans", sans-serif;
 }
-
-.camp {
-    position: relative;
-    margin-left: 3%;
-    margin-top: -40px;
-    margin-bottom: 15px;
-    font-family: 'Josefin Sans', sans-serif;
-}
+footer .camp {
+  position: relative;
+  margin-left: 3%;
+  margin-top: -40px;
+  margin-bottom: 15px;
+  font-family: "Josefin Sans", sans-serif;
+}/*# sourceMappingURL=main.css.map */
