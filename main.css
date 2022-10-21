@@ -1,0 +1,65 @@
+footer {
+    background-color: #494D2C;
+    color: #F2F2F2;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.bordure {
+    border: box;
+    border-top: 1px solid;
+    margin-right: 1035px;
+    margin-left: 10px;
+    color: #A2D4F2;
+    margin-top: 10px;
+}
+
+.footp {
+    margin-left: 20px;
+    margin-top: 6px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.logolol img {
+    max-width: 65px;
+    width: 90%;
+    margin-left: 1%;
+    margin-top: 2%;
+}
+
+.mention {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 3%;
+    margin-right: 1%;
+    color: #A2D4F2;
+}
+
+.logolol {
+    display: flex;
+    
+}
+
+.titre {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;      
+}
+
+.les {
+    position: relative;
+    margin-left: 3%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.camp {
+    position: relative;
+    margin-left: 3%;
+    margin-top: -40px;
+    margin-bottom: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+}
