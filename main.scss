@@ -19,7 +19,7 @@ $eSectBorder: #FFEBD9;
 
 body {
   margin: 0px;
-  font-family: "Font Awesome 5 Free";
+  font-family: 'Josefin Sans', sans-serif !important ;
   font-size: 1.4rem;
 }
 
@@ -144,6 +144,12 @@ nav {
     }
 }
 
+@media screen and (min-width:950px){
+    a{
+        width: 12em;
+    }
+}
+
 /*=============================================
 =            MAIN            =
 =============================================*/
@@ -156,8 +162,8 @@ main{
         height: 100%;
         /* background */
         background-image: url(img/background.jpg);
-        background-repeat: repeat-y;
-        background-size: cover;
+        background-repeat: repeat;
+        background-size: contain;
         /* position */
         position: absolute;
         z-index: -3;
