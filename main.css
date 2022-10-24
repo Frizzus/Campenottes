@@ -144,6 +144,7 @@ footer .mention {
   justify-content: flex-end;
   padding-bottom: 1em;
   margin-right: 1%;
+  margin-bottom: 0px;
   color: #A2D4F2;
 }
 footer .logolol {
