@@ -82,15 +82,12 @@ header figure ~ img {
 =============================================*/
 nav {
   display: flex;
-  justify-content: space-around;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  flex-direction: column;
 }
 nav a.blue {
   background-color: #A2D4F2;
   color: #F2F2F2;
   padding: 10px 20px;
-  border-radius: 20px;
   text-align: center;
   text-decoration: none;
 }
@@ -98,7 +95,6 @@ nav a.blueblue {
   background-color: #5B92D9;
   color: #F2F2F2;
   padding: 10px 20px;
-  border-radius: 20px;
   text-align: center;
   text-decoration: none;
 }
@@ -115,6 +111,17 @@ nav a.blueblue:hover {
   border-color: #5B92D9;
 }
 
+@media screen and (min-width: 530px) {
+  nav {
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  nav a {
+    border-radius: 20px;
+  }
+}
 /*=============================================
 =            MAIN            =
 =============================================*/
