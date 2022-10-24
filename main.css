@@ -144,15 +144,61 @@ footer .mention {
   justify-content: flex-end;
   padding-bottom: 1em;
   margin-right: 1%;
+  margin-bottom: 0px;
   color: #A2D4F2;
 }
 footer .logolol {
   display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 1em;
+  width: calc(15em + 2.5vw);
 }
-footer .titre {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+footer h3 {
+  font-family: "Josefin Sans";
+  width: 7em;
+  align-self: end;
+  margin: 0px;
+}/*# sourceMappingURL=main.css.map */
+
+a.blue {
+    background-color: #A2D4F2;
+    color: #F2F2F2;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+a.blueblue {
+    background-color: #5B92D9;
+    color: #F2F2F2;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+a.blue:hover {
+    background-color: #F2F2F2;
+    color: #A2D4F2;
+    border: 1px solid;
+    border-color: #A2D4F2;
+}
+
+a.blueblue:hover {
+    background-color: #F2F2F2;
+    color: #5B92D9;
+    border: 1px solid;
+    border-color: #5B92D9;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 footer .les {
   position: relative;
