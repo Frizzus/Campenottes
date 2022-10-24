@@ -1,0 +1,21 @@
+body {
+    font-family: arial sans-serif;
+}
+
+#grid-container {
+    width: 90%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+figcaption {
+    text-align: center;
+}
