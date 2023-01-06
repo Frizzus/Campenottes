@@ -55,7 +55,7 @@ header {
   
   #title{
       /* valeur par défault: flexWrap = wrap */
-      @include Flex(row, center, start, nowrap);
+      @include Flex(row, center, center, nowrap);
   
       img{
           width: calc(4em + 2.5vw);

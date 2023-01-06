@@ -36,6 +36,15 @@ footer {
         margin-right: 1%;
         margin-bottom: 0px;
         color: var(--secondary);
+
+        a{
+            text-decoration: none;
+            color: var(--secondary);
+        }
+
+        a:hover{
+            color: var(--tertiary);
+        }
     }
     
     .logolol {
@@ -49,6 +58,7 @@ footer {
     }
     h3{
         font-family: 'Josefin Sans';
+        font-size: 1.8rem;
         width: 7em;
         align-self: end;
         margin: 0px;

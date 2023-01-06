@@ -114,7 +114,7 @@ header a:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   flex-wrap: nowrap;
 }
 #title img {
@@ -173,6 +173,13 @@ footer .mention {
   margin-bottom: 0px;
   color: var(--secondary);
 }
+footer .mention a {
+  text-decoration: none;
+  color: var(--secondary);
+}
+footer .mention a:hover {
+  color: var(--tertiary);
+}
 footer .logolol {
   display: flex;
   flex-direction: row;
@@ -183,6 +190,7 @@ footer .logolol {
 }
 footer h3 {
   font-family: "Josefin Sans";
+  font-size: 1.8rem;
   width: 7em;
   align-self: end;
   margin: 0px;

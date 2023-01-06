@@ -5,5 +5,5 @@
     </div>
     <div class="bordure"></div>
     <p class="footp">Votre coin dans les montagnes</p>        
-    <p class="mention">&copy;Mentions légales</p>
+    <p class="mention"><a href="../pages/mention.php">&copy;Mentions légales</a></p>
 </footer>
