@@ -1,0 +1,40 @@
+@use "../mixin.scss" as *;
+
+#chalet{
+
+    figure{
+        margin: 5px;
+        width: 100px
+    }
+
+}
+
+#list{
+    /* valeur par défault: flexWrap = wrap */
+    @include Flex(row, space-between, flex-start, wrap);
+
+    figure:hover>img{
+        outline: 2px solid var(--primary);
+    }
+
+    figure:focus>img{
+        outline: 3px solid var(--tertiary);
+    }
+
+    figure:focus{
+        outline: none;
+    }
+}
+
+#caroussel{
+    margin: auto;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+    border-radius: 25px;
+    width: fit-content;
+    
+
+    img{
+        outline: 1px solid var(--primary);
+    }
+}

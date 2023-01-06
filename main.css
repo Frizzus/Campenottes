@@ -14,14 +14,6 @@ h2 {
   padding-bottom: 15px;
 }
 
-#grid-container {
-  width: 90%;
-  max-width: 100%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -272,6 +264,7 @@ main hr {
 }
 main figcaption {
   color: var(--primary);
+  font-style: italic;
 }
 main h2 {
   font-weight: bold;
@@ -290,6 +283,49 @@ main .accueil img {
 main .accueil article:nth-of-type(3) img {
   width: 45%;
   margin: 2%;
+}
+
+#chalet figure {
+  margin: 5px;
+  width: 100px;
+}
+
+#list {
+  /* valeur par défault: flexWrap = wrap */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+#list figure:hover > img {
+  outline: 2px solid var(--primary);
+}
+#list figure:focus > img {
+  outline: 3px solid var(--tertiary);
+}
+#list figure:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 910) {
+  #list {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+#caroussel {
+  margin: auto;
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
+  border-radius: 25px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#caroussel img {
+  outline: 1px solid var(--primary);
 }
 
 ul {
