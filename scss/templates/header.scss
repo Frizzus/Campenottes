@@ -1,0 +1,63 @@
+@use "../mixin.scss" as *;
+@use "../var.scss";
+
+header {
+    padding: 10px;
+    height: 30vh;
+    /* Background */
+    background-image: url(img/imageNavbargimp.jpg);
+    background-position: center;
+    background-size: cover;
+    /* Typo */
+    color: var(--light);
+    /* Flex */
+    /* valeur par défault: flexWrap = wrap */
+    @include Flex(column, space-evenly, center,nowrap);
+  
+    h1{
+      width: 7em;
+      margin: 0px;
+    }
+  
+    figure>img{
+      height: 1.5em;
+      margin: 0px;
+      margin-right: 5px;
+    }
+  
+    figure~img{
+      box-sizing: content-box;
+      height: 2em;
+      /* background */
+      background-color: var(--light);
+      border-radius: 10px;
+      /* box model */
+      padding: 5px;
+    }
+  }
+  
+  #title{
+      /* valeur par défault: flexWrap = wrap */
+      @include Flex(row, center, start, nowrap);
+  
+      img{
+          width: calc(4em + 2.5vw);
+          border-radius: 10px;
+      }
+  }
+  
+  @media screen and (min-width: 400px){
+      header{
+          /* valeur par défault: flexWrap = wrap */
+          @include Flex(column, space-evenly, end, nowrap);
+  
+          figure,>img{
+              margin-right: 1em;
+          }
+      }
+  
+      #title{
+          align-self: center;
+      }
+      
+  }

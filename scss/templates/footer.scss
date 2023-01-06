@@ -1,0 +1,56 @@
+footer {
+    background-color: var(--primary);
+    color: var(--light);
+    padding-top: 20px;
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .bordure {
+        width: calc(15em + 2.5vw);
+        border-top: 1px solid;
+        margin-left: 10px;
+        color: var(--secondary);
+        margin-top: 10px;
+    }
+    
+    .footp {
+        margin-left: 20px;
+        margin-top: 6px;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    
+    .logolol img {
+        max-width: 65px;
+        width: 90%;
+        margin-left: 1%;
+        margin-top: 2%;
+    }
+    
+    .mention {
+        display: flex;
+        justify-content: flex-end;
+        padding-bottom: 1em;
+        margin-right: 1%;
+        margin-bottom: 0px;
+        color: var(--secondary);
+    }
+    
+    .logolol {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-left: 1em;
+        width: calc(15em + 2.5vw);
+        
+    }
+    h3{
+        font-family: 'Josefin Sans';
+        width: 7em;
+        align-self: end;
+        margin: 0px;
+    }
+}

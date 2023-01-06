@@ -1,25 +1,73 @@
 @charset "UTF-8";
-/* 'Font Awesome 5 Brands' ; 'Font Awesome 5 Free' */
-@import url(ressources/fontawesomeCss/v5-font-face.css);
-/* color été */
-/* color hiver */
 body {
   margin: 0px;
-  font-family: "Josefin Sans", sans-serif !important;
-  font-size: 1.4rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.1rem;
 }
 
-/*=============================================
-=            HEADER            =
-=============================================*/
+h2 {
+  font-size: 2.2rem;
+}
+
+.lastP {
+  margin-bottom: 0px;
+  padding-bottom: 15px;
+}
+
+#grid-container {
+  width: 90%;
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+figcaption {
+  text-align: center;
+}
+
+.container {
+  margin: auto;
+  width: 85%;
+}
+
+.topRound {
+  text-align: center;
+  background-color: var(--sectBack);
+  border-left: 5px solid var(--sectBorder);
+  border-right: 5px solid var(--sectBorder);
+}
+
+@media screen and (min-width: 530px) {
+  .topRound {
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+  }
+}
+:root {
+  --light: #F2F2F2;
+  --primary: #494D2C;
+  --secondary: #A2D4F2;
+  --tertiary: #5B92D9;
+  --sectBack: #FFE5CC;
+  --sectBorder: #FFEBD9;
+}
+
 header {
+  padding: 10px;
   height: 30vh;
   /* Background */
-  background-image: url(img/imageNavbargimp.JPG);
+  background-image: url(img/imageNavbargimp.jpg);
   background-position: center;
   background-size: cover;
   /* Typo */
-  color: #F2F2F2;
+  color: var(--light);
   /* Flex */
   /* valeur par défault: flexWrap = wrap */
   display: flex;
@@ -41,14 +89,13 @@ header figure ~ img {
   box-sizing: content-box;
   height: 2em;
   /* background */
-  background-color: #F2F2F2;
+  background-color: var(--light);
   border-radius: 10px;
   /* box model */
   padding: 5px;
 }
 
 #title {
-  margin-bottom: 10px;
   /* valeur par défault: flexWrap = wrap */
   display: flex;
   flex-direction: row;
@@ -77,38 +124,83 @@ header figure ~ img {
     align-self: center;
   }
 }
-/*=============================================
-=            NAV            =
-=============================================*/
+footer {
+  background-color: var(--primary);
+  color: var(--light);
+  padding-top: 20px;
+}
+footer img {
+  max-width: 100%;
+  height: auto;
+}
+footer .bordure {
+  width: calc(15em + 2.5vw);
+  border-top: 1px solid;
+  margin-left: 10px;
+  color: var(--secondary);
+  margin-top: 10px;
+}
+footer .footp {
+  margin-left: 20px;
+  margin-top: 6px;
+  font-family: "Josefin Sans", sans-serif;
+}
+footer .logolol img {
+  max-width: 65px;
+  width: 90%;
+  margin-left: 1%;
+  margin-top: 2%;
+}
+footer .mention {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 1em;
+  margin-right: 1%;
+  margin-bottom: 0px;
+  color: var(--secondary);
+}
+footer .logolol {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 1em;
+  width: calc(15em + 2.5vw);
+}
+footer h3 {
+  font-family: "Josefin Sans";
+  width: 7em;
+  align-self: end;
+  margin: 0px;
+}
+
 nav {
   display: flex;
   flex-direction: column;
 }
 nav a.blue {
-  background-color: #A2D4F2;
-  color: #F2F2F2;
+  background-color: var(--secondary);
+  color: var(--light);
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
 }
 nav a.blueblue {
-  background-color: #5B92D9;
-  color: #F2F2F2;
+  background-color: var(--tertiary);
+  color: var(--light);
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
 }
 nav a.blue:hover {
-  background-color: #F2F2F2;
-  color: #A2D4F2;
-  border: 1px solid;
-  border-color: #A2D4F2;
+  background-color: var(--light);
+  color: var(--secondary);
+  outline: 1px solid var(--secondary);
 }
 nav a.blueblue:hover {
-  background-color: #F2F2F2;
-  color: #5B92D9;
-  border: 1px solid;
-  border-color: #5B92D9;
+  background-color: var(--light);
+  color: var(--tertiary);
+  outline: 1px solid var(--tertiary);
 }
 
 @media screen and (min-width: 530px) {
@@ -124,12 +216,9 @@ nav a.blueblue:hover {
 }
 @media screen and (min-width: 950px) {
   a {
-    width: 12em;
+    width: 10rem;
   }
 }
-/*=============================================
-=            MAIN            =
-=============================================*/
 main {
   position: relative;
 }
@@ -155,59 +244,44 @@ main #background div {
   background-color: hsla(28.8deg, 100%, 95.1%, 0.9);
 }
 
-.lastP {
-  margin-bottom: 0px;
-  padding-bottom: 15px;
+main hr {
+  width: 80%;
+  margin: auto;
+}
+main figcaption {
+  color: var(--primary);
+}
+main h2 {
+  font-weight: bold;
+  padding-top: 1em;
+  color: var(--primary);
+}
+main p {
+  width: 90%;
+  margin: auto;
+}
+main .accueil img {
+  width: 60%;
+  border: 1px solid var(--primary);
+  border-radius: 10px;
+}
+main .accueil article:nth-of-type(3) img {
+  width: 45%;
+  margin: 2%;
 }
 
-/*=============================================
-=            FOOTER            =
-=============================================*/
-footer {
-  background-color: #494D2C;
-  color: #F2F2F2;
-}
-footer img {
-  max-width: 100%;
-  height: auto;
-}
-footer .bordure {
-  width: calc(15em + 2.5vw);
-  border-top: 1px solid;
-  margin-left: 10px;
-  color: #A2D4F2;
-  margin-top: 10px;
-}
-footer .footp {
-  margin-left: 20px;
-  margin-top: 6px;
-  font-family: "Josefin Sans", sans-serif;
-}
-footer .logolol img {
-  max-width: 65px;
+.containertourisme {
+  max-width: 1200px;
   width: 90%;
-  margin-left: 1%;
-  margin-top: 2%;
+  margin: 0 auto;
 }
-footer .mention {
-  display: flex;
-  justify-content: flex-end;
-  padding-bottom: 1em;
-  margin-right: 1%;
-  margin-bottom: 0px;
-  color: #A2D4F2;
+
+section {
+  margin: 3px;
 }
-footer .logolol {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-left: 1em;
-  width: calc(15em + 2.5vw);
-}
-footer h3 {
-  font-family: "Josefin Sans";
-  width: 7em;
-  align-self: end;
-  margin: 0px;
+
+.articletour {
+  padding: 1% 2%;
+  box-sizing: border-box;
+  flex-basis: 23%;
 }/*# sourceMappingURL=main.css.map */
