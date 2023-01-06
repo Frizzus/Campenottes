@@ -290,20 +290,4 @@ main .accueil img {
 main .accueil article:nth-of-type(3) img {
   width: 45%;
   margin: 2%;
-}
-
-.containertourisme {
-  max-width: 1200px;
-  width: 90%;
-  margin: 0 auto;
-}
-
-section {
-  margin: 3px;
-}
-
-.articletour {
-  padding: 1% 2%;
-  box-sizing: border-box;
-  flex-basis: 23%;
 }/*# sourceMappingURL=main.css.map */
