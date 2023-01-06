@@ -290,4 +290,12 @@ main .accueil img {
 main .accueil article:nth-of-type(3) img {
   width: 45%;
   margin: 2%;
+}
+
+ul {
+  text-align: left;
+}
+
+iframe {
+  margin-top: 20px;
 }/*# sourceMappingURL=main.css.map */
