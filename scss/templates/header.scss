@@ -18,11 +18,24 @@ header {
       width: 7em;
       margin: 0px;
     }
+
+    figure{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
   
-    figure>img{
-      height: 1.5em;
+    figure>a{
+      display: block;
+      height: 1.5rem;
+      width: 2.25rem;
       margin: 0px;
-      margin-right: 5px;
+      margin-right: 10px;
+      border-radius: 10px;
+    }
+
+    figure>a>img{
+      width: 100%;
     }
   
     figure~img{
@@ -33,6 +46,10 @@ header {
       border-radius: 10px;
       /* box model */
       padding: 5px;
+    }
+
+    a:hover{
+      outline: 1px solid var(--secondary);
     }
   }
   

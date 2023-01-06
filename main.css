@@ -80,10 +80,21 @@ header h1 {
   width: 7em;
   margin: 0px;
 }
-header figure > img {
-  height: 1.5em;
+header figure {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+header figure > a {
+  display: block;
+  height: 1.5rem;
+  width: 2.25rem;
   margin: 0px;
-  margin-right: 5px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+header figure > a > img {
+  width: 100%;
 }
 header figure ~ img {
   box-sizing: content-box;
@@ -93,6 +104,9 @@ header figure ~ img {
   border-radius: 10px;
   /* box model */
   padding: 5px;
+}
+header a:hover {
+  outline: 1px solid var(--secondary);
 }
 
 #title {
