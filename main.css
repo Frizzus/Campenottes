@@ -3,6 +3,13 @@ body {
   margin: 0px;
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.1rem;
+  color: var(--dark);
+}
+
+hr {
+  height: 2px;
+  background-color: var(--primary);
+  border: none;
 }
 
 h2 {
@@ -44,6 +51,7 @@ figcaption {
 }
 :root {
   --light: #F2F2F2;
+  --dark: #121212;
   --primary: #494D2C;
   --secondary: #A2D4F2;
   --tertiary: #5B92D9;
@@ -112,6 +120,7 @@ header a:hover {
 #title img {
   width: calc(4em + 2.5vw);
   border-radius: 10px;
+  margin-right: 10px;
 }
 
 @media screen and (min-width: 400px) {
@@ -198,6 +207,7 @@ nav a.blue {
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
+  text-shadow: 1px 1px 1px var(--dark);
 }
 nav a.blueblue {
   background-color: var(--tertiary);
@@ -205,6 +215,7 @@ nav a.blueblue {
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
+  text-shadow: 1px 1px 1px var(--dark);
 }
 nav a.blue:hover {
   background-color: var(--light);
@@ -308,13 +319,6 @@ main .accueil article:nth-of-type(3) img {
   outline: none;
 }
 
-@media screen and (max-width: 910) {
-  #list {
-    display: grid;
-    grid-auto-rows: auto;
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
 #caroussel {
   margin: auto;
   padding-top: 2.5vh;
