@@ -19,8 +19,6 @@ h2 {
 h3 {
   position: relative;
   text-align: start;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   margin: auto;
   margin-top: 10px;
@@ -42,7 +40,7 @@ h3::after {
 }
 
 [data-desc] {
-  opacity: 0.8;
+  opacity: 1;
   font-style: italic;
   position: relative;
 }
@@ -363,8 +361,6 @@ main .accueil article:nth-of-type(3) img {
   padding-top: 2.5vh;
   padding-bottom: 2.5vh;
   border-radius: 25px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
 }
 #caroussel img {
@@ -387,18 +383,33 @@ main .accueil article:nth-of-type(3) img {
 #reservationMain article > div > section h4 {
   margin-bottom: 0px;
 }
-#reservationMain .dispo > form > article > section {
+#reservationMain form {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+#reservationMain form > section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-#reservationMain .dispo > form > article > section .form-row {
-  flex-grow: 1;
+#reservationMain form > section:first-of-type label, #reservationMain form > section:first-of-type input {
   width: 100%;
 }
-#reservationMain .dispo > form > article > section input:not([type=checkbox]) {
-  width: 90%;
+#reservationMain form > section:first-of-type label {
+  margin-bottom: 5px;
+}
+#reservationMain form > section:last-of-type label:nth-of-type(2n) {
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--primary);
+}
+#reservationMain form > section:last-of-type label {
+  width: 100%;
+  text-align: start;
 }
 
 @media screen and (min-width: 800px) {
@@ -419,4 +430,6 @@ ul {
 
 iframe {
   margin-top: 20px;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */

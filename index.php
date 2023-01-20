@@ -6,9 +6,11 @@
 
     if (in_array($lang, ["fr", "en", "it", "ne", "de"])) {
         header("Location: struct/".$lang."/pages/accueil.php");
+        die;
     }
     else{
         header("Location: struct/en/pages/accueil.php");
+        die;
     }
     exit;
 ?>
