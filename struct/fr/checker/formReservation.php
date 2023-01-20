@@ -10,12 +10,14 @@ if (!ExistsIn_POST(["nom", "email", "tel", "date_deb", "date_fin"])) {
 
 // vérification et sanitize des données
 Handle_SUPER();
+// Connection à la BD TODO: mettre dans un fichier .env
+$_ENV["host"] = "localhost";
+$_ENV["dbname"] = "campenottes";
+$_ENV["user"] = "Frizzus";
+$_ENV["psw"] = "bX]s2yeisdAsif*r";
 
-// Connection à la BD
-$PDO = new PDO(
-    ""
-);
+$PDO = new PDO("mysql:host=" . $_ENV["host"] . ";dbname=" . $_ENV["dbname"], $_ENV["user"], $_ENV["psw"]);
+// vérification des dates
 // preparation de la requête
 // Envoi de la requête
 // Afficher la page confirmant l'envoi
-
