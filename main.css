@@ -16,9 +16,48 @@ h2 {
   font-size: 2.2rem;
 }
 
+h3 {
+  position: relative;
+  text-align: start;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h3::after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 5px;
+  width: 80px;
+  border-bottom: 2px solid var(--primary);
+}
+
 .lastP {
   margin-bottom: 0px;
   padding-bottom: 15px;
+}
+
+[data-desc] {
+  opacity: 0.8;
+  font-style: italic;
+  position: relative;
+}
+
+[data-desc]:hover::after, [data-desc]:focus::after {
+  content: attr(data-desc);
+  font-style: normal;
+  position: absolute;
+  padding: 3px;
+  left: 0px;
+  top: 20px;
+  color: var(--light);
+  background-color: var(--primary);
+  border-radius: 5px;
+  min-width: 200px;
 }
 
 img {
@@ -332,6 +371,48 @@ main .accueil article:nth-of-type(3) img {
   outline: 1px solid var(--primary);
 }
 
+#reservationMain article > div > section {
+  background-color: var(--sectBorder);
+  border: 1px solid var(--primary);
+  border-radius: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  width: max(30%, 150px);
+  margin: auto;
+  margin-bottom: 30px;
+}
+#reservationMain article > div > section ul {
+  padding: 0px;
+}
+#reservationMain article > div > section h4 {
+  margin-bottom: 0px;
+}
+#reservationMain .dispo > form > article > section {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#reservationMain .dispo > form > article > section .form-row {
+  flex-grow: 1;
+  width: 100%;
+}
+#reservationMain .dispo > form > article > section input:not([type=checkbox]) {
+  width: 90%;
+}
+
+@media screen and (min-width: 800px) {
+  #reservationMain .appart div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  #reservationMain article > div > section {
+    margin: 0px;
+    margin-bottom: 30px;
+  }
+}
 ul {
   text-align: left;
 }

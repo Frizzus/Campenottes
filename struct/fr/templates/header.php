@@ -10,5 +10,5 @@
             <img src="../../../img/logo.png.png" alt="Logo des Campenottes">
             <h1>Les Campenottes</h1>
         </div>
-        <img src="../../../img/cooling-icon.svg" alt="Flocon de neige">
+        <img src="../../../img/cooling-icon.svg" alt="Flocon de neige" id="switchColor">
 </header>

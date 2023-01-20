@@ -16,9 +16,46 @@ h2{
   font-size: 2.2rem;
 }
 
+h3{
+  position: relative;
+  text-align: start;
+  width: fit-content;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h3::after{
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 5px;
+  width: 80px;
+  border-bottom: 2px solid var(--primary);
+}
+
 .lastP{
     margin-bottom: 0px;
     padding-bottom: 15px;
+}
+
+[data-desc]{
+  opacity: 0.8;
+  font-style: italic;
+  position: relative;
+}
+
+[data-desc]:hover::after, [data-desc]:focus::after{
+  content: attr(data-desc);
+  font-style: normal;
+  position: absolute;
+  padding: 3px;
+  left: 0px;
+  top: 20px;
+  color: var(--light);
+  background-color: var(--primary);
+  border-radius: 5px;
+  min-width: 200px;
 }
 
 img {
