@@ -47,12 +47,15 @@
                     <h2>Une région touristique</h2>
                     <p>Vous pourrez découvrir les endroits touristiques comme le Hameau des Alpes et l’écomusée du bois et
                         de la forêt mais aussi les randonnées, abondante dans cette région et pour tous les niveaux !</p>
+                    <p>région forestière hors saison</p>
+                    <p>lac annecy lac le plus saint de france</p>
                 </article>
                 <hr>
                 <article>
                     <h2>Une gastronomie propre à la région</h2>
                     <p>N’hésitez pas à aller manger dans les nombreux restaurants présents dans la région. Vous y
                         découvrirez la cuisine des montagnes.</p>
+                    <p>Région du reblochon (montagne savoir, val d'harly en savoie) / reblochonnade</p>
                 </article>
                 <hr>
                 <article>
