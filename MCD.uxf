@@ -1,0 +1,27 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>9</zoom_level><element><id>UMLClass</id><coordinates><x>1</x><y>324</y><w>162</w><h>81</h></coordinates><panel_attributes>Client
+--
+nom:VARCHAR(50)
+email:VARCHAR(255)
+tel:VARCHAR(100)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>217</x><y>315</y><w>180</w><h>99</h></coordinates><panel_attributes>Semaine
+--
+estWeekend: boolean
+dateDebut: Date
+dateFin: Date
+saison: VARCHAR(70)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>460</x><y>324</y><w>135</w><h>72</h></coordinates><panel_attributes>Formule
+--
+optionMenage: boolean
+optionDrap: boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>271</x><y>180</y><w>117</w><h>45</h></coordinates><panel_attributes>Reserver
+--
+prix: int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>100</x><y>189</y><w>189</w><h>153</h></coordinates><panel_attributes>lt=-
+m1=1,n</panel_attributes><additional_attributes>10;150;10;100;80;10;190;10</additional_attributes></element><element><id>Relation</id><coordinates><x>379</x><y>189</y><w>153</w><h>153</h></coordinates><panel_attributes>lt=-
+m1=0,n</panel_attributes><additional_attributes>130;150;130;110;80;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>316</x><y>216</y><w>45</w><h>117</h></coordinates><panel_attributes>lt=-
+m1=0,n</panel_attributes><additional_attributes>10;110;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>334</x><y>45</y><w>144</w><h>90</h></coordinates><panel_attributes>Habitation
+--
+nbPlace: int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>469</x><y>90</y><w>81</w><h>81</h></coordinates><panel_attributes>lt=-
+m1=0,n</panel_attributes><additional_attributes>10;10;70;10;70;70</additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>487</x><y>153</y><w>108</w><h>36</h></coordinates><panel_attributes>Considérer</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>523</x><y>180</y><w>36</w><h>162</h></coordinates><panel_attributes>lt=-
+m1=1,1</panel_attributes><additional_attributes>10;160;10;10</additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>271</x><y>522</y><w>117</w><h>45</h></coordinates><panel_attributes>Facturer
+--
+prix: int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>100</x><y>396</y><w>189</w><h>171</h></coordinates><panel_attributes>lt=-
+m1=1,n</panel_attributes><additional_attributes>10;10;10;60;70;170;190;170</additional_attributes></element><element><id>Relation</id><coordinates><x>316</x><y>405</y><w>45</w><h>135</h></coordinates><panel_attributes>lt=-
+m1=0,n</panel_attributes><additional_attributes>10;10;10;130</additional_attributes></element><element><id>Relation</id><coordinates><x>379</x><y>387</y><w>162</w><h>180</h></coordinates><panel_attributes>lt=-
+m1=0,n</panel_attributes><additional_attributes>140;10;140;50;70;180;10;180</additional_attributes></element></diagram>

@@ -1,0 +1,39 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>400</x><y>258</y><w>160</w><h>100</h></coordinates><panel_attributes>Reservation
+--
+-prix: int
+--
++setPrix():int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>730</x><y>278</y><w>140</w><h>90</h></coordinates><panel_attributes>&lt;&lt;struct&gt;&gt;
+Formule
+--
+-optionEntretien:bool
+-optionDraperie:bool</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>710</x><y>458</y><w>160</w><h>70</h></coordinates><panel_attributes>&lt;&lt;struct&gt;&gt;
+Habitation
+--
+-nbPlace: int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>290</x><y>18</y><w>130</w><h>80</h></coordinates><panel_attributes>&lt;&lt;struct&gt;&gt;
+Facture
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>100</x><y>248</y><w>180</w><h>130</h></coordinates><panel_attributes>semaine
+--
+-estWeekend:bool
+-dateDebut: string
+-dateFin:string
+-saison: Saison
+--
+get;set;
++estValide():bool</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>438</y><w>160</w><h>100</h></coordinates><panel_attributes>&lt;&lt;Enum&gt;&gt;
+Saison
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>600</x><y>88</y><w>130</w><h>100</h></coordinates><panel_attributes>Client
+--
+-nom: string
+-email: string
+-tel: string</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>308</y><w>200</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1..1
+r1=formule</panel_attributes><additional_attributes>180;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>288</y><w>150</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1..n
+r1=semaines</panel_attributes><additional_attributes>10;20;130;20</additional_attributes></element><element><id>Relation</id><coordinates><x>760</x><y>358</y><w>90</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
+m1=1..1
+r1=habitation</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>510</x><y>138</y><w>110</w><h>140</h></coordinates><panel_attributes>lt=&lt;-
+m1=1..1
+r1=client</panel_attributes><additional_attributes>90;20;10;20;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>410</x><y>68</y><w>140</w><h>210</h></coordinates><panel_attributes>lt=&lt;-
+m1=1..1
+r1=reservation</panel_attributes><additional_attributes>60;190;60;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>150</x><y>368</y><w>130</w><h>110</h></coordinates><panel_attributes>lt=.&gt;
+&lt;&lt;use&gt;&gt;</panel_attributes><additional_attributes>80;10;80;90;10;90</additional_attributes></element></diagram>

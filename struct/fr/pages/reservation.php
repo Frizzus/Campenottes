@@ -11,7 +11,7 @@
             <h2>Tarifs locations: </h2>
             <section class="appart">
                 <article>
-                    <h3>Appartement 82m²</h3>
+                    <h3>Appartement 82m² (8 personnes)</h3>
                     <div>
                         <section>
                             <h4>Tarifs de <span data-desc="La saison d'hiver commence en décembre et se finit en mars" tabindex="-1">saison</span> : </h4>
@@ -32,7 +32,7 @@
                     </div>
                 </article>
                 <article>
-                    <h3>Studio 30m²</h3>
+                    <h3>Studio 30m² (4 personnes)</h3>
                     <div>
                         <section>
                             <h4>Tarifs de <span data-desc="La saison d'hiver commence en décembre et se finit en mars" tabindex="-1">saison</span> : </h4>
@@ -62,6 +62,12 @@
                         </label>
                         <label for="tel">Téléphone
                             <input id="tel" type="tel" name="tel" placeholder="Votre numéro de téléphone" maxlength="100" required>
+                        </label>
+                        <label for="habitation"> Habitation
+                            <select name="habitation" id="habitation">
+                                <option value="1">Appartement</option>
+                                <option value="2">Studio</option>
+                            </select>
                         </label>
                     </section>
                     <section>
