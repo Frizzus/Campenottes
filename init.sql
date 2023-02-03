@@ -11,6 +11,7 @@ DROP TABLE IF EXISTS Client;
 
 CREATE TABLE Habitation(
     id_habitation SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
+    nom VARCHAR(50),
     nb_place SMALLINT NOT NULL,
 -- CLEFS
     PRIMARY KEY(id_habitation)
